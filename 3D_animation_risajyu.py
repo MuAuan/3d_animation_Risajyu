@@ -32,7 +32,7 @@ def update2(num, data1,data2, line1,line2):
     #print(num)
     line1.set_data(data1[:2,num-200 :num])
     line1.set_3d_properties(data1[2,num-200 :num])
-    line2.set_data(data2[0,num-200 :num]+data1[0,num-200]++data1[0,200],data2[1:2,0 :200])
+    line2.set_data(data2[0,num-200 :num]+data1[0,num-200]+data1[0,200],data2[1:2,0 :200])
     line2.set_3d_properties(data2[2,0 :200])
     ax.set_xlim3d([0+data1[0,num-200], 36+data1[0,num-200]])
     ax.set_xticklabels([])
